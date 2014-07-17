@@ -59,6 +59,7 @@ enum MenuField
 	ROUNDFREEZEEND_STATUS,
 	ROUNDEND_STATUS,
 	QUAKESOUND_STATUS,
+	// SETSOUND_STATUS
 	JOINGAME_STATUS,
 };
 
@@ -117,7 +118,6 @@ stock bool:IsCSGO()
 
 stock LogSoundsList()
 {
-	decl String:name[MAX_FILE_LEN];
 	for(new soundKey = 0; soundKey < NUM_SOUNDS; ++soundKey)
 	{
 		PrintToServer("%s", g_SoundNames[soundKey]);
@@ -128,6 +128,7 @@ stock LogSoundsList()
 		}
 		else
 		{
+			decl String:name[192];
 			for (new i = 0; i < GetArraySize(sounds); ++i)
 			{
 				GetArrayString(sounds, i, name, sizeof(name));

@@ -8,7 +8,7 @@ The main difference are
 * Added new events: `joingame`, `roundendfreeze`, `roundend`
 * Plugin can emit sounds randomly from specified folder with the specific pattern
 
-##Instalation##
+##Installation##
 Merge content with `sourcemod` folder
 
 ##Description##
