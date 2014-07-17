@@ -16,7 +16,7 @@ Plugin will create `cfg/rds.cfg` file. There are useful convars for plugin's man
 
 
 | ConVar | Description | Type | Default |  
-| - | - | - | - |
+| --- | --- | --- | --- |
 | rds_enable | toggle plugin | bool | 1 |  
 | rds_volume | volume: should be a number between 0.0. and 1.0 | float | 1.0 |  
 | rds_sound_delay | sound delay after event | float | 0.5 |  
